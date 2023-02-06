@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dove Coder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dove Coder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topic
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HTML5</a></li>
+                  <li><a class="dropdown-item" href="#">CSS3</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Javascript</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">signup</button>
+            </div>
+        </div>
+      </nav>
+      <!-- login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to your account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail2" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword2" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- signUp modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">SIGN UP For new account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Enter username</label>
+                  <input type="text" class="form-control" id="uname">
+                  <label for="exampleInputEmail1" class="form-label">Enter your email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <!-- <div>
+                    <label for="name" id="fulname">
+                <input type="text" class="form-control" id="fname" placeholder="Enter your first name"><input type="text" class="form-control" id="lname" placeholder=" Enter your last name ">
+                    </label>
+                </div> -->
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">agree to all terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary">SignUp</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="container" width="100px"> 
+        <div id="carouselloginCaptions" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselloginCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselloginCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselloginCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img   src="coding photo2.jpg"  width="900px" height="300px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" >
+                  <h2>Welcome to My Blog Site</h2>
+                  <p>Here you get all want you need for programming.</p>
+                  <button class="btn btn-danger">Technology</button>
+                  <button class="btn btn-success">Web Development</button>
+                  <button class="btn btn-primary">tech News</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img  src="coding photo 1.jpg" width="900px" height="300px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>This is a proper place for coder</h5>
+                  <p>Nothing should left from the scratch</p>
+                  <button class="btn btn-danger">Technology</button>
+                  <button class="btn btn-success">Web Development</button>
+                  <button class="btn btn-primary">tech News</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img  src="3.jpg" width="900px" height="300px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Best wishes for your coding session</h2>
+                  <p>You will be great coder in future.</p>
+                  <button class="btn btn-danger">Technology</button>
+                  <button class="btn btn-success">Web Development</button>
+                  <button class="btn btn-primary">tech News</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselloginCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselloginCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4">
+              <img  src="1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" >
+              <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Documentation</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Always remember that the computer does not have intelligence, but it acquires artificial intelligence through three main functional elements: the ability to analyze, the ability to compose, and logical reasoning.</font></font></p>
+              <p><a class="btn btn-primary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="2.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+              <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Survey</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If we want to use a smart computer to process the Bangla language, we find ourselves facing a great challenge, especially since our language is characterized by the coherence and overlapping of its systems. Nevertheless, artificial intelligence enables us to obtain four types of processing, which are: phonological processing, morphological processing, grammatical processing, and grammatical processing. semantic.</font></font></p>
+              <p><a class="btn btn-primary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img  src="3.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+              <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Collecting Information other way</font></font></h2>
+              <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thanks to the research and techniques of artificial intelligence, we have been able to move from the stage of dealing with the physicist to the stage of dealing with the logical, and this transition has reflected positively on how people deal with their living languages, and this means that it should reflect positively on how we deal with our Arabic language.</font></font></p>
+              <p><a class="btn btn-primary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">View details</font></font></a></p>
+            </div><!-- /.col-lg-4 -->
+          </div>
+      </div>
+
+      <div class="container my-5 justify-content-center d-flex align-items-center" >
+        <footer class="hsg-footer">
+            
+            <section class="hsg-footer__bottom">
+              <div class="hsg-footer__apps">
+                
+                
+                <a class="ga_nav_link hsg-footer__app" href="https://apps.apple.com/us/app/hubspot/id1107711722" data-ga_nav_type="footer_nav" data-ga_nav_tree_text="Download on the App Store">
+                  <img class="img-fluid" class="homepage-mobile-footer-apple" src="https://blog.hubspot.com/hubfs/app%20store%20high%20res.png" alt="Download on the App Store" loading="lazy">
+                </a>
+                <a class="ga_nav_link hsg-footer__app" href="https://play.google.com/store/apps/details?id=com.hubspot.android&amp;hl=en_US" data-ga_nav_type="footer_nav" data-ga_nav_tree_text="Get it on Google Play">
+                  <img class="img-fluid" class="homepage-mobile-footer-google" src="https://blog.hubspot.com/hubfs/google%20play%20high%20res.png" alt="Get it on Google Play" loading="lazy">
+                </a>
+                
+              </div>
+              <div class="hsg-footer__logo">
+                <a href="https://www.hubspot.com/?hubs_post=blog.hubspot.com/website/bootstrap-carousel-css&amp;hubs_post-cta=null" class="ga_nav_link" data-ga_nav_type="footer_nav" data-ga_nav_tree_text="HubSpot Logo">
+                  <img class="img-fluid" loading="lazy" src="https://blog.hubspot.com/hubfs/WBZ-1165%20Global%20Nav%20Redesign/Wordmark-White.svg" alt="HubSpot"></a>
+                <p>Copyright © 2023 HubSpot, Inc.</p>
+                </div>
+              <div class="hsg-footer__copyright">
+                <ul>
+                  <li><a href="https://legal.hubspot.com/legal-stuff" class="ga_nav_link" data-ga_nav_type="footer_nav" data-ga_nav_tree_text="Legal Stuff">
+                    Legal Stuff</a></li>
+                  <li><a href="https://legal.hubspot.com/privacy-policy" class="ga_nav_link" data-ga_nav_type="footer_nav" data-ga_nav_tree_text="Privacy Policy">
+                    Privacy Policy</a></li>
+                  <li><a href="https://legal.hubspot.com/security" class="ga_nav_link" data-ga_nav_type="footer_nav" data-ga_nav_tree_text="Security">
+                    Security</a></li>
+                  </ul>
+              </div>
+            </section>
+          </footer>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
